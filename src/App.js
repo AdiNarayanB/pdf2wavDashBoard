@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react';
+import PdfUploader from './PdfUploader';
+import AudioPlayer from './AudioPlayer';
+const App = () => {
+  // Assuming you have a response byte object named 'responseByteObject'
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+    	<h1> Pdf2Wav Converter </h1>
+    	
+    	<PdfUploader />
+    	<AudioPlayer />
+    </div>		
+    
   );
-}
+};
 
 export default App;
+
